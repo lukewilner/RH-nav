@@ -1,0 +1,33 @@
+Panels:
+  - Class: rviz_common/Displays
+    Name: Displays
+Visualization Manager:
+  Displays:
+    - Alpha: 0.5
+      Class: rviz_default_plugins/Grid
+      Color: 160; 160; 164
+      Enabled: true
+      Name: Grid
+      Plane Cell Count: 40
+      Cell Size: 5
+      Reference Frame: map
+    - Class: rviz_default_plugins/MarkerArray
+      Enabled: true
+      Name: RockHound (true=black, EKF estimate=red, lidar=yellow)
+      Topic:
+        Value: /viz_markers
+      Value: true
+  Global Options:
+    Background Color: 255; 255; 255
+    Fixed Frame: map
+  Views:
+    Current:
+      Class: rviz_default_plugins/TopDownOrtho
+      Name: Current View
+      Scale: 18
+      Target Frame: map
+      X: 42
+      Y: 75
+Window Geometry:
+  Height: 900
+  Width: 1400
